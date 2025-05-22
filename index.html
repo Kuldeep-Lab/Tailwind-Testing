@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="">
+      <nav class="bg-black shadow-md opacity-80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex items-center">
+              <a href="#" class="text-xl font-bold text-white">MyLogo</a>
+            </div>
+            <div
+              class="hidden md:flex space-x-8 pl-20 font-bold text-shadow-gray-600 items-center"
+            >
+              <a href="#" class="text-white hover:text-blue-600">Home</a>
+              <a href="#" class="text-white hover:text-blue-600">About</a>
+              <a href="#" class="text-white hover:text-blue-600">Services</a>
+              <a href="#" class="text-white hover:text-blue-600">Contact</a>
+
+              <div class=" mt-1 pl-50 space-x-5">
+                <button
+                  class="px-5 py-1 hover:bg-cyan-500 hover:text-white text-cyan-500 border-2 border-cyan-400 rounded-3xl"
+                >
+                  Sign Up
+                </button>
+                <button
+                  class="px-5 py-1 hover:bg-white hover:text-cyan-600 text-white border-2 bg-cyan-600 rounded-3xl"
+                >
+                  Sign In
+                </button>
+              </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2">
+          <a href="#" class="block text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#" class="block text-gray-700 hover:text-blue-600">About</a>
+          <a href="#" class="block text-gray-700 hover:text-blue-600"
+            >Services</a
+          >
+          <a href="#" class="block text-gray-700 hover:text-blue-600"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+     <div class="bg-[url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg')] bg-cover h-screen bg-fixed ">
+            <div class="pt-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                  
+              <div class="">
+                <h1 class="text-3xl text-white lg:text-7xl font-bold px-5 lg:pl-40">Startup Framework. Suit Up your startup</h1>
+                <p class="mt-15 text-gray-400 text-md px-5 lg:px-40 font-semibold ">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+                      
+                <div class=" mt-10 px-5 space-x-5 lg:px-40">
+                  <button
+                    class="px-5 py-2 hover:bg-cyan-500 hover:text-white text-cyan-500 border-2 border-cyan-600 rounded-3xl"
+                  >
+                    Get Started
+                  </button>
+                  <button
+                    class="px-5 py-2 hover:bg-white hover:text-cyan-600 text-white  bg-cyan-600 rounded-3xl"
+                  >
+                    Learn more
+                  </button>
+                </div>
+              </div>
+
+              <div class="hidden">
+
+              </div>
+            </div>
+     </div>
+
+
+     <!-- services section -->
+      <div class="mt-20 ">
+        <h1 class="pt-20 text-4xl lg:text-5xl font-bold text-center text-gray-600">Our Services</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 lg:px-50 text-center mt-10 gap-20">
+            
+          <div>
+            <i class="fa-solid fa-briefcase text-4xl text-orange-500"></i>
+            <p class="py-4 font-bold text-2xl text-orange-500">Many use full components</p>
+            <p class="text-sm text-gray-500">Startup Framework contains components and complex blocks which can easily be integrated into almost any design. </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-arrows-up-down-left-right text-4xl text-orange-500"></i>
+            <p class="py-4 font-bold text-2xl text-orange-500">Responsive layout</p>
+            <p class="text-sm text-gray-500">We haven’t forgotten about responsive layout. With Startup Framework, you can create a website with full mobile support.</p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-desktop text-4xl text-orange-500"></i>
+            <p class="py-4 font-bold text-2xl text-orange-500">Retina ready</p>
+            <p class="text-sm text-gray-500">Startup Framework works on devices supporting Retina Display. Feel the clarity in each pixel.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- testimonial section -->
+       <div class="mt-20 bg-indigo-950">
+         <h1 class="pt-10 px-5 lg:pl-70 text-4xl text-white font-bold">Our Happy Clients</h1>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-5 lg:px-70 gap-10 py-20">
+
+          <div class="border-2 border-gray-700 rounded-2xl hover:border-gray-400">
+               <img class="h-10 w-10 rounded-full ml-35 lg:ml-50 my-5" src="https://static.vecteezy.com/system/resources/previews/024/183/525/non_2x/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg" alt="">
+               <p class="text-gray-500 text-lg  font-bold text-center">Rayhan Curran</p>
+               <h1 class="text-white text-center px-5 py-5">Get a fully retina ready site when you build with Startup Framework. Websites look sharper and more gorgeous on devices with retina display support</h1>
+          </div> 
+
+
+          <div class="border-2 border-gray-700 rounded-2xl hover:border-gray-400">
+            <img class="h-10 w-10 rounded-full ml-35 lg:ml-50 my-5" src="https://static.vecteezy.com/system/resources/thumbnails/004/899/833/small_2x/beautiful-girl-with-blue-hair-avatar-of-woman-for-social-network-vector.jpg" alt="">
+            <p class="text-gray-500 text-lg  font-bold text-center">Kayley Frame</p>
+            <h1 class="text-white text-center px-5 py-5">As a business targeting high net worth individuals, we were looking for a slick, cool and mini-malistic design for our website</h1>
+       </div> 
+
+
+       <div class="border-2 border-gray-700 rounded-2xl hover:border-gray-400">
+        <img class="h-10 w-10 rounded-full ml-35 lg:ml-50 my-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH82jMdXoxqv8HMHDDHe8d0hoDPITlgpuCyQ&s" alt="">
+        <p class="text-gray-500 text-lg  font-bold text-center">Gene Whitfield</p>
+        <h1 class="text-white text-center px-5 py-5">The most important part of the Startup Framework is the samples</h1>
+   </div> 
+
+   <div class="border-2 border-gray-700 rounded-2xl hover:border-gray-400">
+    <img class="h-10 w-10 rounded-full ml-35 lg:ml-50 my-5" src="https://img.freepik.com/premium-vector/male-face-avatar-icon-set-flat-design-social-media-profiles_1281173-3806.jpg?semt=ais_hybrid&w=740" alt="">
+    <p class="text-gray-500 text-lg  font-bold text-center">Allan Kim</p>
+    <h1 class="text-white text-center px-5 py-5">I’ve built my website with Startup just in one day, and it was ready-to-go. </h1>
+</div> 
+         </div>
+       </div>
+
+       <!-- footer section -->
+        <footer class="bg-gray-900 mt-20">
+          <div class="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 lg:px-40">
+               
+            <div class="text-gray-600">
+              <h1 class="text-white py-5 font-bold">Navigation</h1>
+              <ol type="none">
+                 <li class="hover:text-blue-500">Home</li>
+                 <li class="hover:text-blue-500">About</li>
+                 <li class="hover:text-blue-500">Contact</li>
+                 <li class="hover:text-blue-500">Location</li>
+              </ol>
+            </div>
+
+            <div class="text-gray-600">
+              <h1 class="text-white font-bold py-5">Our Services</h1>
+              <ol type="none">
+                 <li class="hover:text-blue-500">Web design</li>
+                 <li class="hover:text-blue-500">Responsive layouts</li>
+                 <li class="hover:text-blue-500">Startup Support</li>
+                 <li class="hover:text-blue-500">Web development</li>
+              </ol>
+            </div>
+
+            <div class="text-gray-600">
+              <h1 class="text-white py-5 font-bold">Social links</h1>
+              <ol type="none">
+                 <li class="hover:text-blue-500">Whatsapp</li>
+                 <li class="hover:text-blue-500">Facebook</li>
+                 <li class="hover:text-blue-500">Instagram</li>
+                 <li class="hover:text-blue-500">Twitter</li>
+              </ol>
+            </div>
+
+            <div class="text-gray-600">
+              <h1 class="text-white py-5 font-bold">Support</h1>
+              <ol type="none">
+                 <li class="hover:text-blue-500">FAQ's</li>
+                 <li class="hover:text-blue-500">Tech support</li>
+                 <li class="hover:text-blue-500">Customer support</li>
+                 <li class="hover:text-blue-500">abc@gmail.com</li>
+              </ol>
+            </div>
+
+          </div>
+        </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
